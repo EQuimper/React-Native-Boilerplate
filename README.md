@@ -9,6 +9,7 @@ Here you can put all your colors you want to use globally. With react-native-ext
 - [Eslint with config Airbnb](https://github.com/airbnb/javascript) with some changed
 - [Redux](http://redux.js.org/) for state managing
 - [react-native-extended-stylesheet](https://github.com/vitalets/react-native-extended-stylesheet) Extend React Native stylesheets with media-queries, variables, themes, relative units, percents, math operations, scaling and other styling stuff.
+- [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
 
 ## Good Tips
 

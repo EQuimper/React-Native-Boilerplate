@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 import Colors from './constants/Colors';
 
@@ -25,5 +26,6 @@ const styles = EStyleSheet.create({
 export const Root = () =>
   <View style={styles.container}>
     <Text style={styles.welcome}>Welcome To the React-Native-Boilerplat</Text>
+    <Icon name="rocket" size={30} color="#900" />
   </View>;
 
