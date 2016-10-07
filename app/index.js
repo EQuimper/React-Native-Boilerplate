@@ -1,7 +1,10 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import { Provider } from 'react-redux';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import Icon from 'react-native-vector-icons/FontAwesome';
+
+import store from './store';
 
 import Colors from './constants/Colors';
 
@@ -27,10 +30,15 @@ const styles = EStyleSheet.create({
   }
 });
 
-export const Root = () =>
+const Root = () =>
   <View style={styles.container}>
     <Icon name="rocket" size={50} style={styles.icon} />
     <Text style={styles.welcome}>Welcome To</Text>
     <Text style={styles.welcome}>React-Native-Boilerplate</Text>
   </View>;
+
+export const index = () =>
+  <Provider store={store}>
+    <Root />
+  </Provider>;
 

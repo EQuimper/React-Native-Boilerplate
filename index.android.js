@@ -4,6 +4,6 @@
  * @flow
  */
 import { AppRegistry } from 'react-native';
-import { Root } from './app';
+import { index } from './app';
 
-AppRegistry.registerComponent('RNBoilerplate', () => Root);
+AppRegistry.registerComponent('RNBoilerplate', () => index);
