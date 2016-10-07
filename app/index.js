@@ -13,19 +13,24 @@ const styles = EStyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '$blueColor'
+    backgroundColor: '$lightBlue'
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
-    color: '#ffffff'
+    color: '$whiteColor',
+    fontWeight: 'bold'
+  },
+  icon: {
+    color: '$redColor'
   }
 });
 
 export const Root = () =>
   <View style={styles.container}>
-    <Text style={styles.welcome}>Welcome To the React-Native-Boilerplat</Text>
-    <Icon name="rocket" size={30} color="#900" />
+    <Icon name="rocket" size={50} style={styles.icon} />
+    <Text style={styles.welcome}>Welcome To</Text>
+    <Text style={styles.welcome}>React-Native-Boilerplate</Text>
   </View>;
 
